@@ -49,4 +49,4 @@ Tools
 
 3. Vercel for deployment
 
-Live Website: https://my-portfolio-six-omega-90.vercel.app/
+Live Website: https://jyotsnamahajan-portfolio.vercel.app/
