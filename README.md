@@ -5,25 +5,25 @@ This portfolio highlights the work I have done using HTML, CSS, JavaScript, and 
 
 🚀 Features
 
-🌗 Dark & Light Theme Toggle
+1. 🌗 Dark & Light Theme Toggle
 
-📱 Fully Responsive Design
+2. 📱 Fully Responsive Design
 
-🎨 Beautiful UI with CSS & Material UI
+3. 🎨 Beautiful UI with CSS & Material UI
 
-🧩 Reusable React Components
+4. 🧩 Reusable React Components
 
-🗂️ Projects Section with Screenshots
+5. 🗂️ Projects Section with Screenshots
 
-🔗 GitHub Links for Each Project
+6. 🔗 GitHub Links for Each Project
 
-🧠 Skills Section with Icons
+7. 🧠 Skills Section with Icons
 
-📄 Resume Download Option
+8. 📄 Resume Download Option
 
-🧭 Smooth Navigation with Scroll
+9. 🧭 Smooth Navigation with Scroll
 
-⚡ Fast performance optimized
+10. ⚡ Fast performance optimized
 
 🛠️ Tech Stack
 
