@@ -1,0 +1,127 @@
+/* ---- Skills Section Layout ---- */
+.skills-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.skills-section.light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+/* Dark Mode */
+.skills-section.dark {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+/* ---- Title ---- */
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Subtitle ---- */
+.skills-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+/* ---- Flex container ---- */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;       /* moves items to next line */
+  justify-content: center;
+  gap: 1.5rem;           /* space between skill cards */
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ---- Each Skill Card ---- */
+.skill-card {
+  width: 150px;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Light Mode Card */
+.skills-section.light .skill-card {
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: #000;
+}
+
+/* Dark Mode Card */
+.skills-section.dark .skill-card {
+  background-color: #2c2c2c;
+  border: 1px solid white;
+  color: #fff;
+}
+
+/* Hover effect */
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ---- Icons ---- */
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .skill-card {
+    width: 130px;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .skill-icon {
+    font-size: 2.8rem;
+  }
+}
+
+/* Large Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .skill-card {
+    width: 45%;       /* Two cards per row */
+    max-width: 220px;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+
+  .skills-title {
+    font-size: 2.2rem;
+  }
+
+  .skills-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .skill-card {
+    width: 100%;      /* One card per row */
+  }
+
+  .skill-icon {
+    font-size: 2.2rem;
+  }
+
+  .skills-title {
+    font-size: 1.8rem;
+  }
+
+  .skills-subtitle {
+    font-size: 0.9rem;
+  }
+}

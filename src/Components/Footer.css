@@ -1,0 +1,93 @@
+.footer-section {
+  padding: 1rem 2rem;   /* smaller height */
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.footer-section.light {
+  background-color: #eaeaea;
+  color: #000;
+}
+
+/* Dark Mode */
+.footer-section.dark {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* Main Row Layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Left text and right icons */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left side text */
+.footer-text {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Right side icons */
+.footer-icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Each icon */
+.footer-icon svg {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+/* Hover effect */
+.footer-icon:hover svg {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.footer-section.dark .footer-icon:hover svg{
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.781);
+}
+
+.footer-section.light .footer-icon:hover svg{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.781);
+}
+
+.footer-icon{
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 1.2rem 1.3rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}
+
+/* Mobile (text & icons stacked) */
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .footer-icon svg {
+    font-size: 1.5rem;
+  }
+
+  .footer-icons {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,100 @@
+.projects-heading{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.project-section{
+    padding: 1rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.project-section.light{
+    background-color: #eaeaea;
+    color: #000;
+}
+
+/* Dark Mode */
+.project-section.dark{
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.project-card{
+    width: 370px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+/* Card hover effect */
+.project-section.light .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.project-section.dark .project-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.25);
+}
+
+.project-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Description text */
+.project-card p {
+  opacity: 0.8;
+}
+
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .project-card {
+    width: 320px;
+  }
+
+  .project-section {
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;  /* Full width but with spacing */
+    max-width: 450px;
+  }
+
+  .projects-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .projects-heading {
+    font-size: 1.6rem;
+  }
+
+  .project-section {
+    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+  }
+}
+
+

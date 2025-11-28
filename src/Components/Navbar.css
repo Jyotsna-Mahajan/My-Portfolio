@@ -1,0 +1,129 @@
+/* NAVBAR BASE STYLES */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+/* LIGHT MODE */
+.navbar.light {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* DARK MODE */
+.navbar.dark {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* -----------------------
+     NAV LINKS (DESKTOP)
+------------------------ */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-links a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+/* Hover */
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Light Mode */
+.navbar.light .nav-links a {
+  color: #000;
+}
+
+/* Dark Mode */
+.navbar.dark .nav-links a {
+  color: #fff;
+}
+
+/* -----------------------
+     RESUME LINK (Same as others)
+------------------------ */
+.resume-btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Keep underline on hover like other links */
+.resume-btn:hover {
+  text-decoration: underline;
+}
+
+/* Light/Dark mode inherit handled by nav-links a */
+.navbar.light .resume-btn {
+  color: #000;
+}
+
+.navbar.dark .resume-btn {
+  color: #fff;
+}
+
+/* -----------------------
+     THEME TOGGLE
+------------------------ */
+.theme-toggle {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+/* -----------------------
+     HAMBURGER (MOBILE)
+------------------------ */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* -----------------------
+     MOBILE RESPONSIVE
+------------------------ */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-right: auto;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background: inherit;
+    padding: 1rem 0;
+    gap: 1.5rem;
+    display: none;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
