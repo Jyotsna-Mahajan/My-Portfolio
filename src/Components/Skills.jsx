@@ -5,6 +5,7 @@ import { DiMysql } from "react-icons/di";
 import { SiCplusplus } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { SiReactrouter } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
 
 export default function Skills({ darkMode }) {
   const skills = [
@@ -15,9 +16,9 @@ export default function Skills({ darkMode }) {
     { name: "React Router", icon: <SiReactrouter className="skill-icon" /> },
 
     { name: "Material UI", icon: <SiMui className="skill-icon" /> },
-    { name: "C++", icon: <SiCplusplus className="skill-icon" /> },
     { name: "Git & GitHub", icon: <FaGitAlt className="skill-icon" /> },
     { name: "SQL", icon: <DiMysql className="skill-icon" /> },
+    {name: "Python", icon: <FaPython className="skill-icon"/>}
   ];
 
   return (

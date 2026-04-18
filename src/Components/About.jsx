@@ -7,11 +7,8 @@ export default function About({ darkMode }) {
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-            I'm Jyotsna Mahajan, MCA graduate and a passionate web developer. I
-            enjoy building interactive and responsive websites using HTML, CSS,
-            JavaScript, and React. Currently, I'm learning React — this
-            portfolio is part of that journey. My goal is to become a strong web
-            developer and keep growing every day.
+            Hi, I’m an MCA postgraduate and a curious learner who loves exploring new tools and technologies.
+I believe in learning by doing, and this portfolio is a collection of projects and experiences that represent my journey in tech so far.
           </p>
         </div>
 

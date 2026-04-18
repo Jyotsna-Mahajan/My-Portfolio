@@ -12,56 +12,8 @@ import {
 } from "@mui/material";
 
 export default function Projects({ darkMode }) {
-  const Projects = [
-    {
-      title: "LoginSignUpPage",
-      description: "A Login and signup page built using HTML and CSS",
-      image: "/Images/LoginAndSignUpPage.png",
-      github: "https://github.com/Jyotsna-Mahajan/LoginAndSignUpPage",
-    },
-    {
-      title: "Redux Clone Website",
-      description: "A Redux Website Clone built using HTML and CSS",
-      image: "/Images/ReduxCloneWebsite.png",
-      github: "https://github.com/Jyotsna-Mahajan/Redux-Clone-Website",
-    },
-    {
-      title: "KamyaFoods Clone Website",
-      description: "A KamyaFoods Website Clone built using HTML and CSS",
-      image: "/Images/KamyaFoodsCloneWebsite.png",
-      github: "https://github.com/Jyotsna-Mahajan/KamyaFoods-Clone-Website",
-    },
-    {
-      title: "Microsoft Clone Website",
-      description: "A Microsoft Website Clone built using HTML and CSS",
-      image: "/Images/MicrosoftCloneWebsite.png",
-      github: "https://github.com/Jyotsna-Mahajan/Microsoft-Clone-Website",
-    },
-    {
-      title: "Razer Clone Website",
-      description: "A Razer Website Clone built using HTML and CSS",
-      image: "/Images/RazerCloneWebsite.png",
-      github: "https://github.com/Jyotsna-Mahajan/Razer-Clone-Website",
-    },
-    {
-      title: "Tesla Clone Website",
-      description: "A Tesla Website Clone built using HTML and CSS",
-      image: "/Images/TeslaCloneWebsite.png",
-      github: "https://github.com/Jyotsna-Mahajan/Tesla-Clone-Website",
-    },
-    {
-      title: "ToDoApp Website (JS)",
-      description: "A ToDo App built using HTML, CSS and JavaScript",
-      image: "/Images/ToDoApp.png",
-      github: "https://github.com/Jyotsna-Mahajan/ToDo-App",
-    },
-    {
-      title: "Guessing Number Game",
-      description:
-        "A fun number guessing game built using HTML, CSS, and JavaScript.",
-      image: "/Images/GuessingNumberGame.png",
-      github: "https://github.com/Jyotsna-Mahajan/GuessingNumber-Game",
-    },
+  const projects = [
+
     {
       title: "Dictionary App",
       description:
@@ -93,14 +45,32 @@ export default function Projects({ darkMode }) {
       image: "/Images/CPUScheduling.png",
       github: "https://github.com/Jyotsna-Mahajan/CPU-Scheduling-Visualizer",
     },
+    {
+      title: "Password Generator",
+      description: "This project is a Password Generator built using Python. It generates a random and secure password based on user preferences such as including numbers and symbols.",
+      image: "/Images/python.avif",
+      github: "https://github.com/Jyotsna-Mahajan/Password-Generator"
+    },
+    {
+      title: "Smart Calculator",
+      description: "A Python-based advanced command-line calculator that evaluates mathematical expressions and stores calculation history both in memory and in a file.",
+      image: "/Images/python.avif",
+      github: "https://github.com/Jyotsna-Mahajan/Smart-Calculator"
+    },
+    {
+      title: "QR Code Generator",
+      description: "A simple Python-based Command Line Interface (CLI) application that generates QR codes for website URLs. Users can input a URL and get a QR code image that can be scanned to open the website.",
+      image: "/Images/python.avif",
+      github: "https://github.com/Jyotsna-Mahajan/QR-Generator"
+    }
   ];
 
   return (
     <>
     
     <div className={`project-section ${darkMode ? "dark" : "light"}`}>
-      <h2 className="projects-heading">My Recent Works</h2>
-      {Projects.map((project, index) => (
+      <h2 className="projects-heading">My Projects</h2>
+      {projects.map((project, index) => (
         <Card className="project-card" key={index}>
           <CardMedia
             component="img"
