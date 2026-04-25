@@ -44,7 +44,7 @@ export default function Navbar({ darkMode, toggleTheme }) {
          {/* ✅ Added Resume Download Link */}
         <li>
           <a 
-            href="/public/Resume.pdf" 
+            href="https://drive.google.com/file/d/17Gx6EZxQSIj2mXTQ66TOTpwx63rXtz4o/view?usp=sharing" 
             download 
             className="resume-btn" 
             onClick={() => setMenuOpen(false)}
