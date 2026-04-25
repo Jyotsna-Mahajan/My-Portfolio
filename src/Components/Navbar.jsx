@@ -45,7 +45,6 @@ export default function Navbar({ darkMode, toggleTheme }) {
         <li>
           <a 
             href="https://drive.google.com/file/d/17Gx6EZxQSIj2mXTQ66TOTpwx63rXtz4o/view?usp=sharing" 
-            download 
             target="_blank"
             className="resume-btn" 
             onClick={() => setMenuOpen(false)}
