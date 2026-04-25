@@ -6,13 +6,13 @@
 
 /* Light Mode */
 .footer-section.light {
-  background-color: #eaeaea;
+  background-color: #f4f4f4; /* darker than white navbar */
   color: #000;
 }
 
 /* Dark Mode */
 .footer-section.dark {
-  background-color: #1f1f1f;
+  background-color: #2b2b2b; /* lighter than navbar */
   color: #fff;
 }
 

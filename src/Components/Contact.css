@@ -6,13 +6,13 @@
 
 /* Light Mode */
 .contact-section.light{
-    background-color: #f4f4f4;
-    color: #000;
+  background-color: #eaeaea;
+  color: #000;
 }
 
 /* Dark Mode */
 .contact-section.dark{
-    background-color: #2b2b2b;
+    background-color: #1f1f1f;
     color: #fff;
 }
 
@@ -45,12 +45,12 @@
 
 /* Hover Effect */
 .contact-section.light .contact-link:hover {
-  background-color: #e0e0e0;
+  background-color: #e0dede;
   transform: translateY(-2px);
 }
 
 .contact-section.dark .contact-link:hover {
-  background-color: #1f1f1f;
+  background-color: #818181;
   transform: translateY(-2px);
 }
 

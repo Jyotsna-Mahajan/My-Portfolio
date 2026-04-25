@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
+import Internship from "./Components/Internship";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,6 +28,10 @@ function App() {
 
       <section id="skills">
         <Skills darkMode={darkMode} />
+      </section>
+
+      <section id="internship">
+        <Internship darkMode={darkMode} />
       </section>
 
       <section id="projects">

@@ -1,0 +1,155 @@
+.internship-heading {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+  width: 100%;
+  font-weight: 600;
+}
+
+/* Section Layout */
+.internship-section {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.internship-section.light {
+  background-color: #eaeaea;
+  color: #000;
+}
+
+/* Dark Mode */
+.internship-section.dark {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* Card Styling */
+.internship-card {
+  width: 360px;
+  border-radius: 16px !important;
+  overflow: hidden;
+  padding: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.internship-section.light .internship-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.internship-section.dark .internship-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+/* Title */
+.internship-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+/* Bullet List Styling */
+.internship-card ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.internship-card li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+/* Fix Typography spacing inside list */
+.internship-card li p {
+  margin: 0;
+}
+
+/* Align Icon to Right */
+.internship-card .MuiCardActions-root {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0;
+}
+
+/* Icon hover */
+.internship-card .MuiIconButton-root {
+  transition: transform 0.2s ease;
+}
+
+.internship-card .MuiIconButton-root:hover {
+  transform: scale(1.2);
+}
+
+/* Certificate Button */
+.certificate-btn {
+  text-transform: none !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 8px !important;
+  padding: 6px 12px !important;
+  transition: all 0.3s ease;
+}
+
+/* Light mode */
+.internship-section.light .certificate-btn {
+  color: #1976d2;
+}
+
+.internship-section.light .certificate-btn:hover {
+  background-color: rgba(25, 118, 210, 0.1);
+}
+
+/* Dark mode */
+.internship-section.dark .certificate-btn {
+  color: #1976d2;
+}
+
+.internship-section.dark .certificate-btn:hover {
+  background-color: rgba(144, 202, 249, 0.1);
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .internship-card {
+    width: 320px;
+  }
+
+  .internship-section {
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .internship-card {
+    width: 90%;
+    max-width: 450px;
+  }
+
+  .internship-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .internship-card {
+    width: 100%;
+  }
+
+  .internship-heading {
+    font-size: 1.6rem;
+  }
+
+  .internship-section {
+    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+  }
+}

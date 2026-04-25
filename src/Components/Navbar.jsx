@@ -32,6 +32,9 @@ export default function Navbar({ darkMode, toggleTheme }) {
           <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
         </li>
         <li>
+          <a href="#internship" onClick={() => setMenuOpen(false)}>Internships</a>
+        </li>
+        <li>
           <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
         </li>
         <li>
@@ -41,7 +44,7 @@ export default function Navbar({ darkMode, toggleTheme }) {
          {/* ✅ Added Resume Download Link */}
         <li>
           <a 
-            href="/public/JyotsnaResume.pdf" 
+            href="/public/Resume.pdf" 
             download 
             className="resume-btn" 
             onClick={() => setMenuOpen(false)}
